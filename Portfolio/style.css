@@ -67,13 +67,14 @@ body{
     grid-area: one;
     margin: 0 auto;
     position: relative;
-    width: 50%;
+    width: 80%;
     height: auto;
     padding-left: 10px;
+    border-radius: 50%;
 }
 .mainimage{
    width: 100%;
-   border-radius: 2rem;
+   border-radius: 100%;
 }
 .intro{
     grid-area: two;
