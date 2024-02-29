@@ -31,12 +31,14 @@ body{
 .hoverani a{
     display: inline-block;
     transition: color 0.2s;
+    transition: transform 0.5s ;
+    transition-timing-function: ease-out;
     
 }
 .hoverani a:hover{
     color: #ef9273;
     transform: translateY(-10px);
-    transition: transform 0.5s;
+    
 }
 .navbar > ul{
     margin-right: 10px;
@@ -66,15 +68,12 @@ body{
 .photo{
     grid-area: one;
     margin: 0 auto;
-    position: relative;
-    width: 90%;
-    height: auto;
-    padding-left: 10px;
-    border-radius: 10%;
+    width: 100%;
 }
 .mainimage{
-   width: 100%;
-   border-radius: 100%;
+   width: 80%;
+  
+   border-radius: 60%;
 }
 .intro{
     grid-area: two;
@@ -92,10 +91,7 @@ body{
     flex-direction: column;
   
 }
-.socials a:hover{
-    transform: translateY(-10px);
-    transition: transform 0.5s;
-}
+
 .socials a{
  display: inline-block;
 width: 80px;
@@ -105,8 +101,13 @@ color: #000;
 top: -90px;
 left: 0px;
 transition: color 0.3s;
+transition: transform 0.5s;
+transition-timing-function: ease-out;
 }
-
+.socials a:hover{
+    transform: translateY(-15px);
+    
+}
 .fa-brands{
     font-size: 2rem;
     line-height: 1;
@@ -119,7 +120,7 @@ transition: color 0.3s;
 @media (max-width: 1000px) {
     .container{
       padding: 10px 10px;
-      gap: 5px;
+      gap: 15px;
       place-content: center;
       grid-template-columns: 50% 50%;
       grid-template-areas: 
@@ -135,12 +136,14 @@ transition: color 0.3s;
         flex-direction: row;
         justify-content: space-between;
         margin-right: 20px;
-    
       }
+      .navbar{
+        padding: 0;
+     }
 }
 @media (max-width: 414px) {
     .container{
-      gap: 5px;
+      gap: 15px;
       grid-template-columns: 100%;
       grid-template-areas: 
       'one'
@@ -157,4 +160,8 @@ transition: color 0.3s;
         flex-direction: row;
         justify-content: space-between;
       }
+     .navbar{
+        padding: 0;
+     }
     }
+   
