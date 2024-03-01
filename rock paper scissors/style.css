@@ -1,0 +1,75 @@
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+    80%{
+        opacity:.5
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: poppins , sans-serif ;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+.header{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.js-results{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    
+}
+.playbutton{
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.js-score{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 20px;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+}
+.js-reset{
+    background-color: white;
+    padding: 7px;
+    color: black;
+    font-weight: bolder;
+    margin-top: 45px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.resultimage{
+    height: 80px;
+    width: 80px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    animation: blink 1s linear infinite ;
+}
