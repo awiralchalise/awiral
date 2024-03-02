@@ -318,7 +318,7 @@ padding-top: 2rem;
     }
     .projectimage{
         width: 100%;
-        height: 80%;
+
         border-radius: 5%;
         cursor: pointer;
     }
@@ -348,7 +348,6 @@ padding-top: 2rem;
     }
     .projectintrocomingsoon{
         padding-top: 8.5rem;
-      
         font-weight: 500;
         font-size: 20px;
     }
@@ -361,3 +360,26 @@ padding-top: 2rem;
         transform: translateY(-20px);
     
     }
+   .calculatorsimage{
+    display: flex;
+    justify-content: center;
+   }
+   .calculatorimage{
+    width: 90%;
+    border-radius: 5%;
+    cursor: pointer;
+   }
+   .projectintrocalc{
+       font-weight: 500;
+       font-size: 20px;
+       padding-top: 2.8rem;
+   }
+   .calculator a {
+    display: inline-block;
+    transition: transform 0.5s;
+    transition-timing-function: ease-out;
+}
+.calculator a:hover{
+    transform: translateY(-20px);
+
+}
