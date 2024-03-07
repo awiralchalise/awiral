@@ -318,9 +318,9 @@ padding-top: 2rem;
     }
     .projectimage{
         width: 100%;
-
         border-radius: 5%;
         cursor: pointer;
+        text-align: center;
     }
     .calculator{
         grid-area: twopro;
@@ -329,7 +329,7 @@ padding-top: 2rem;
         height: 100%;
         padding-left: 1rem;
     }
-    .shop{
+    .todolist{
         grid-area: threepro;
         margin: 0;
         width: 100%;
@@ -346,10 +346,15 @@ padding-top: 2rem;
         font-weight: 500;
         font-size: 20px;
     }
-    .projectintrocomingsoon{
-        padding-top: 8.5rem;
+    .projectintrotodo{
+        padding-top: 2rem;
         font-weight: 500;
         font-size: 20px;
+    }
+    .projectintrocalc{
+        font-weight: 500;
+        font-size: 20px;
+        padding-top: 2rem;
     }
     .rockpaperscissors a {
         display: inline-block;
@@ -360,26 +365,22 @@ padding-top: 2rem;
         transform: translateY(-20px);
     
     }
-   .calculatorsimage{
-    display: flex;
-    justify-content: center;
-   }
-   .calculatorimage{
-    width: 90%;
-    border-radius: 5%;
-    cursor: pointer;
-   }
-   .projectintrocalc{
-       font-weight: 500;
-       font-size: 20px;
-       padding-top: 2.8rem;
-   }
+   
    .calculator a {
     display: inline-block;
     transition: transform 0.5s;
     transition-timing-function: ease-out;
 }
 .calculator a:hover{
+    transform: translateY(-20px);
+
+}
+.todolist a{
+    display: inline-block;
+    transition: transform 0.5s;
+    transition-timing-function: ease-out;
+}
+.todolist a:hover{
     transform: translateY(-20px);
 
 }
